@@ -1,7 +1,10 @@
 import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomeLayout from "./pages/HomeLayout";
 
 const App = () => {
-  return <div className="text-red-500">App</div>;
+  const router = createBrowserRouter([{ path: "/", element: <HomeLayout /> }]);
+  return <RouterProvider router={router} />;
 };
 
 export default App;

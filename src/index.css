@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-100: #19d78d;
+  --color-btn-color: #1f1f1f;
+}
+
+body {
+  background-color: #020901;
+  color: var(--color-primary-100);
+  text-shadow: 0 0 3px #19d78d, 0 0 5px #19d78d, 0 0 10px #19d78d;
+}
