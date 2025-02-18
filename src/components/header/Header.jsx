@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="px-[120px] py-5 bg-btn-color flex justify-between items-center m-5 rounded-full">
+    <div className="px-[120px] py-5 bg-btn-color flex justify-between items-center top-2 rounded-full overflow-hidden absolute w-full">
       <h1 className="text-2xl font-semibold">{`<SHAFI />`}</h1>
       <div className="flex gap-3 items-center text-lg">
         <a>Home</a>
