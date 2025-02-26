@@ -3,8 +3,8 @@ import React from "react";
 export default function AboutSection() {
   return (
     <div className="px-[120px] py-5 flex flex-col gap-5">
-      <h3 className="text-3xl font-semibold ">About Me</h3>
-      <div className="flex flex-col gap-5 max-w-[600px] text-lg">
+      <h3 className="text-3xl font-semibold text-center">About Me</h3>
+      <div className="flex flex-col gap-5 text-lg">
         <p>
           Hi, I'm Mohammad Shafi S., a passionate Full Stack Web Developer and
           Engineer from Kollam, Kerala, India. I graduated from TKM College of
