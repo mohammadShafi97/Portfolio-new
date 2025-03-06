@@ -4,14 +4,14 @@ export default function AboutSection() {
   return (
     <div className="px-[120px] py-5 flex flex-col items-center gap-5">
       <h3 className="text-3xl font-semibold text-center">About Me</h3>
-      <p className="max-w-[600px] text-center py-10">
+      <p className="max-w-[600px] text-center py-10 text-green-100">
         Hi, I'm Mohammad Shafi S., a passionate Full Stack Web Developer and
         Engineer from Kollam, Kerala, India. I graduated from TKM College of
         Engineering, one of the most prestigious institutions in the state.
       </p>
       <div className="flex flex-col gap-5 my-10 text-lg items-center">
         <div className="grid grid-cols-3 justify-items-center ">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 text-green-100">
             <p className="text-center">My Journey in Tech</p>
             <p className="text-center">
               From childhood, I have been fascinated by computers, which led me
@@ -24,7 +24,7 @@ export default function AboutSection() {
             src="https://res.cloudinary.com/dnimjeptu/image/upload/v1740590677/about_d168wg.png"
             className="w-[250px] h-[250px] rounded-full object-cover border border-[#19d78d]"
           />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 text-green-100">
             <p className="text-center">Skills & Expertise</p>
             <p className="text-center">
               I specialize in the MERN stack and have a strong foundation in:
@@ -35,7 +35,7 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 max-w-[500px]">
+        <div className="flex flex-col gap-5 max-w-[500px] text-green-100">
           <p className="text-center">Teaching & Mentorship</p>
           <p className="text-center">
             I'm also a part-time teacher, and over 100 students have attended my

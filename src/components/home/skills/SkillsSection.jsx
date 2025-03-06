@@ -35,7 +35,7 @@ export default function SkillsSection() {
               rotate: 360, // Rotate on hover
               scale: 1.3, // Scale up on hover
               backgroundColor: "#19d78d", // Change background color on hover
-              transition: { duration: 0.9, ease: "easeInOut" }, // Smooth transition
+              transition: { duration: 0.3, ease: "easeInOut" }, // Smooth transition
             }}
           >
             <img src={x} className="w-[100px] object-cover" />
