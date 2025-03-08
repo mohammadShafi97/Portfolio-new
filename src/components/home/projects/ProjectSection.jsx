@@ -115,7 +115,7 @@ export default function ProjectSection() {
     },
   ];
   return (
-    <div className="bg-black px-[120px] py-5">
+    <div className="bg-black px-[120px] py-5" id="project">
       <h3 className="py-10 text-3xl font-semibold text-center">
         Latest Projects
       </h3>

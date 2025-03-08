@@ -5,7 +5,7 @@ import RotatingText from "../RotatingText";
 
 export default function LandingSection() {
   return (
-    <div className="landing-height relative">
+    <div className="landing-height relative" id="home">
       <div className="h-screen">
         <Particles
           particleColors={["#bcf5df", "#ffffff"]}

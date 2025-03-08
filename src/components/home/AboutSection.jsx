@@ -2,7 +2,10 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <div className="px-[120px] py-5 flex flex-col items-center gap-5">
+    <div
+      className="px-[120px] py-5 flex flex-col items-center gap-5"
+      id="about"
+    >
       <h3 className="text-3xl font-semibold text-center">About Me</h3>
       <p className="max-w-[600px] text-center py-10 text-green-100">
         Hi, I'm Mohammad Shafi S., a passionate Full Stack Web Developer and

@@ -3,27 +3,30 @@ import { motion } from "framer-motion";
 
 export default function SkillsSection() {
   const images = [
-    "/skills/aws.png",
-    "/skills/bootstrap.png",
-    "/skills/css.png",
-    "/skills/express.png",
-    "/skills/git.png",
     "/skills/html.png",
-    "/skills/jquery.png",
+    "/skills/css.png",
     "/skills/js.png",
-    "/skills/mongodb.png",
-    "/skills/next.png",
-    "/skills/node.png",
-    "/skills/postgress.png",
-    "/skills/postman.png",
     "/skills/react.png",
-    "/skills/redux.png",
-    "/skills/sql.png",
+    "/skills/node.png",
+    "/skills/express.png",
+    "/skills/mongodb.png",
+    "/skills/bootstrap.png",
     "/skills/tailwind.png",
+    "/skills/redux.png",
+    "/skills/jquery.png",
+    "/skills/postgress.png",
+    "/skills/sql.png",
+    "/skills/aws.png",
+    "/skills/git.png",
+    "/skills/next.png",
+    "/skills/postman.png",
     "/skills/typescript.png",
   ];
   return (
-    <div className="px-[120px] py-10 flex flex-col gap-10 items-center">
+    <div
+      className="px-[120px] py-10 flex flex-col gap-10 items-center"
+      id="skills"
+    >
       <h4 className="text-3xl font-semibold text-center">My Skills</h4>
       <div className="grid grid-cols-6 gap-10 place-content-center justify-center">
         {images.map((x, i) => (

@@ -15,7 +15,7 @@ export default function ProjectCard({
     <div
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => setShowDetails(false)}
-      className={`border border-[#19d78d] p-5 rounded-lg hover:scale-105 hover:shadow-lg shadow-[#19d78d] ease-in-out duration-500`}
+      className={`relative border border-[#19d78d] p-5 rounded-lg hover:scale-105 hover:shadow-md shadow-[#19d78d] ease-in-out duration-300`}
     >
       <div
         className={`flex justify-between items-center ${
@@ -32,12 +32,12 @@ export default function ProjectCard({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="my-5 detail"
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="h-full absolute top-0 left-0 w-full bg-gradient-to-b from-50% from-[#19d78d] flex flex-col justify-center"
         >
-          <p className="text-center text-green-100">{description}</p>
+          <p className="text-center text-white font-semibold">{description}</p>
           <div className="flex flex-col items-center gap-5 my-5">
-            <p>Tools Used</p>
+            <p className="text-white text-lg font-semibold">Tools Used</p>
             <div className=" flex gap-5">
               {tools?.map((x, i) => (
                 <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center overflow-hidden">
