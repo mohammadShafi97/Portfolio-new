@@ -18,8 +18,8 @@ export default function ProjectCard({
       className={`relative border border-[#19d78d] p-5 rounded-lg hover:scale-105 hover:shadow-md shadow-[#19d78d] ease-in-out duration-300`}
     >
       <div
-        className={`flex justify-between items-center ${
-          odd ? "flex-row" : "flex-row-reverse"
+        className={`flex  flex-col justify-between gap-3 items-center ${
+          odd ? "md:flex-row" : "md:flex-row-reverse"
         }`}
       >
         <div>
@@ -36,12 +36,15 @@ export default function ProjectCard({
           className="h-full absolute top-0 left-0 w-full bg-gradient-to-b from-50% from-[#19d78d] flex flex-col justify-center"
         >
           <p className="text-center text-white font-semibold">{description}</p>
-          <div className="flex flex-col items-center gap-5 my-5">
-            <p className="text-white text-lg font-semibold">Tools Used</p>
-            <div className=" flex gap-5">
+          <div className="flex flex-col items-center md:gap-5 gap-2 md:my-5 mt-1">
+            <p className="text-white md:text-lg font-semibold">Tools Used</p>
+            <div className=" flex gap-5 flex-wrap justify-center">
               {tools?.map((x, i) => (
-                <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center overflow-hidden">
-                  <img src={x} className="w-14 object-cover overflow-hidden" />
+                <div className="bg-white md:w-16 md:h-16 w-10 h-10 rounded-full flex justify-center items-center overflow-hidden">
+                  <img
+                    src={x}
+                    className="md:w-14 w-9 object-cover overflow-hidden"
+                  />
                 </div>
               ))}
             </div>

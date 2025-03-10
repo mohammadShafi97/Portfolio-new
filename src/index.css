@@ -33,6 +33,10 @@ body {
 
   /* text-shadow: 0 0 3px #19d78d, 0 0 5px #19d78d, 0 0 10px #19d78d; */
 }
+input,
+textarea {
+  outline: none;
+}
 
 .landing-height {
   min-height: calc(100vh - 80px);

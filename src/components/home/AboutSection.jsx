@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutSection() {
   return (
     <div
-      className="px-[120px] py-5 flex flex-col items-center gap-5"
+      className="lg:px-[120px] px-5 py-5 flex flex-col items-center gap-5"
       id="about"
     >
       <h3 className="text-3xl font-semibold text-center">About Me</h3>
@@ -13,8 +13,8 @@ export default function AboutSection() {
         Engineering, one of the most prestigious institutions in the state.
       </p>
       <div className="flex flex-col gap-5 my-10 text-lg items-center">
-        <div className="grid grid-cols-3 justify-items-center ">
-          <div className="flex flex-col gap-5 text-green-100">
+        <div className="grid lg:grid-cols-3 justify-items-center gap-3 ">
+          <div className="flex flex-col gap-5 text-green-100 lg:order-1 order-2">
             <p className="text-center">My Journey in Tech</p>
             <p className="text-center">
               From childhood, I have been fascinated by computers, which led me
@@ -25,9 +25,9 @@ export default function AboutSection() {
           </div>
           <img
             src="https://res.cloudinary.com/dnimjeptu/image/upload/v1740590677/about_d168wg.png"
-            className="w-[250px] h-[250px] rounded-full object-cover border border-[#19d78d]"
+            className="w-[250px] h-[250px] rounded-full object-cover border border-[#19d78d] order-1"
           />
-          <div className="flex flex-col gap-5 text-green-100">
+          <div className="flex flex-col gap-5 text-green-100 lg:order-1 order-3">
             <p className="text-center">Skills & Expertise</p>
             <p className="text-center">
               I specialize in the MERN stack and have a strong foundation in:

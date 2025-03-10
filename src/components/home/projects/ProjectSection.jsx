@@ -80,9 +80,26 @@ export default function ProjectSection() {
     },
     {
       image:
+        "https://res.cloudinary.com/dnimjeptu/image/upload/v1741456867/Screenshot_2025-03-08_232430_grlpzd.png",
+      link: "https://jobportalversion2.onrender.com",
+      title: "06 COMMUNITY APP",
+      tools: [
+        "/skills/react.png",
+        "/skills/tailwind.png",
+        "/skills/js.png",
+        "/skills/node.png",
+        "/skills/express.png",
+        "/skills/mongodb.png",
+        "/skills/redux.png",
+      ],
+      description:
+        "a platform to personalise your social life. we have a Dating App for persons who are looking for date. A matrimony App for making your personal life a success. A job portal for your professional career. An ecommerce shop to enrich your need. And if you are interested in studying abroad a Study Abroad APP",
+    },
+    {
+      image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586498/Screenshot_2025-02-26_214413_gz0xmb.png",
       link: "https://bemax-ts-portal.onrender.com/",
-      title: "06 BEMAX PORTAL",
+      title: "07 BEMAX PORTAL",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -100,7 +117,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586499/Screenshot_2025-02-26_214353_nm2ftw.png",
       link: "https://proshop-408l.onrender.com",
-      title: "07 PROSHOP",
+      title: "08 PROSHOP",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -115,7 +132,7 @@ export default function ProjectSection() {
     },
   ];
   return (
-    <div className="bg-black px-[120px] py-5" id="project">
+    <div className="bg-black lg:px-[120px] px-5 py-5" id="project">
       <h3 className="py-10 text-3xl font-semibold text-center">
         Latest Projects
       </h3>

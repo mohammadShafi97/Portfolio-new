@@ -24,11 +24,11 @@ export default function SkillsSection() {
   ];
   return (
     <div
-      className="px-[120px] py-10 flex flex-col gap-10 items-center"
+      className="lg:px-[120px] px-5 py-10 flex flex-col gap-10 items-center"
       id="skills"
     >
       <h4 className="text-3xl font-semibold text-center">My Skills</h4>
-      <div className="grid grid-cols-6 gap-10 place-content-center justify-center">
+      <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 md:gap-10 gap-5 place-content-center justify-center">
         {images.map((x, i) => (
           <motion.div
             className="bg-white w-fit p-5 rounded-lg flex justify-center items-center"
