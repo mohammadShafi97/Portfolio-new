@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
+import { motion, useInView } from "framer-motion";
 
 export default function ProjectSection() {
   const items = [
@@ -131,8 +132,18 @@ export default function ProjectSection() {
         "A simple E-commerce website where you can sell and buy items",
     },
   ];
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
-    <div className="bg-black lg:px-[120px] px-5 py-5" id="project">
+    <motion.div
+      ref={ref}
+      initial={{ y: 200, opacity: 0 }} // Start off-screen below
+      animate={isInView ? { y: 0, opacity: 1 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="bg-black lg:px-[120px] px-5 py-5"
+      id="project"
+    >
       <h3 className="py-10 text-3xl font-semibold text-center">
         Latest Projects
       </h3>
@@ -149,6 +160,6 @@ export default function ProjectSection() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

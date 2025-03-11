@@ -31,7 +31,7 @@ export default function LandingSection() {
           />
           <RotatingText
             texts={["Full Stack Developer", "Teacher", "Engineer"]}
-            mainClassName="px-2 sm:px-2 md:px-3 text-2xl bg-[#19d78d] text-black font-bold overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+            mainClassName="px-2 sm:px-2 md:px-3 text-2xl bg-[#00FF00] text-black font-bold overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

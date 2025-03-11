@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 export default function AboutSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial={{ scale: 0.5, y: 50, opacity: 0 }}
+      animate={isInView ? { scale: 1, y: 0, opacity: 1 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className="lg:px-[120px] px-5 py-5 flex flex-col items-center gap-5"
       id="about"
     >
@@ -47,6 +54,6 @@ export default function AboutSection() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

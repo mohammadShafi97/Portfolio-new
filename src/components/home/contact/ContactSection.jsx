@@ -1,11 +1,25 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { CiPhone, CiMail } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { sendMail } from "../../../utils/email";
 
 export default function ContactSection() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    sendMail({ name, email, phone, message });
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  }
   return (
     <div id="contact" className="lg:px-[120px] px-5 py-10 text-black">
       <div className="flex md:flex-row flex-col gap-5 justify-between items-center bg-green-50 p-5 rounded-lg">
@@ -81,36 +95,54 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="md:w-1/2 w-full">
-          <form className="flex flex-col gap-3 bg-green-200 p-5 rounded-lg w-full">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-3 bg-green-200 p-5 rounded-lg w-full"
+          >
             <div className="flex flex-col gap-1">
               <label className="text-sm">Name</label>
               <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 type="text"
                 className="bg-green-300 rounded-sm px-2 py-2"
+                required
               />
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-sm">Email</label>
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="text"
                 className="bg-green-300 rounded-sm px-2 py-2"
+                required
               />
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-sm">Phone</label>
               <input
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 type="text"
                 className="bg-green-300 rounded-sm px-2 py-2"
+                required
               />
             </div>
             <div className="flex flex-col gap-1">
               <label className="text-sm">Message</label>
               <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="bg-green-300 rounded-sm px-2 py-2"
                 rows={5}
+                required
               />
             </div>
-            <button className="py-2 bg-green-800 rounded-sm text-white">
+            <button
+              type="submit"
+              className="py-2 bg-green-800 rounded-sm text-white cursor-pointer"
+            >
               Lets Connect..
             </button>
           </form>
