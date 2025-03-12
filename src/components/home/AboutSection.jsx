@@ -19,6 +19,11 @@ export default function AboutSection() {
         Engineer from Kollam, Kerala, India. I graduated from TKM College of
         Engineering, one of the most prestigious institutions in the state.
       </p>
+      <button className="text-black font-semibold bg-primary-100 px-4 py-2 rounded-md">
+        <a href="/Mohammad_Shafi.pdf" download={"Mohammad_Shafi"}>
+          Download CV
+        </a>
+      </button>
       <div className="flex flex-col gap-5 my-10 text-lg items-center">
         <div className="grid lg:grid-cols-3 justify-items-center gap-3 ">
           <div className="flex flex-col gap-5 text-green-100 lg:order-1 order-2">
