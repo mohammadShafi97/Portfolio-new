@@ -5,10 +5,9 @@ import { motion, useInView } from "framer-motion";
 export default function ProjectSection() {
   const items = [
     {
-      image:
-        "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586389/Screenshot_2025-02-26_213131_yasonh.png",
-      link: "https://dahabminers.com/",
-      title: "01 DAHAB MINERS",
+      image: "/mining.png",
+      link: "https://mining.dahabminers.com/",
+      title: "01 DAHAB MINING APP",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -20,13 +19,31 @@ export default function ProjectSection() {
         "/skills/aws.png",
       ],
       description:
-        "A platform where you can buy crypto mining machines and choose a hosting for your machine.",
+        "(Platform still on Development)A platform where you can buy crypto mining machines and track their daily rewards and make payouts and also track the performance of the machines you own. It comes with an admin Dashboard as well",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586389/Screenshot_2025-02-26_213131_yasonh.png",
+      link: "https://dahabminers.com/",
+      title: "02 DAHAB MINERS",
+      tools: [
+        "/skills/react.png",
+        "/skills/tailwind.png",
+        "/skills/node.png",
+        "/skills/express.png",
+        "/skills/mongodb.png",
+        "/skills/js.png",
+        "/skills/redux.png",
+        "/skills/aws.png",
+      ],
+      description:
+        "A Website which showcases the different aspects of crypto mining and how dahab Miners as a crypto mining company provides flexible and feasible solutions for mining.",
     },
     {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586389/Screenshot_2025-02-26_213206_xt9wvo.png",
       link: "https://tronacademy.in/",
-      title: "02 TRON ACADEMY",
+      title: "03 TRON ACADEMY",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -40,7 +57,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586388/Screenshot_2025-02-26_213332_oln0of.png",
       link: "https://handcar.ae",
-      title: "03 HANDCAR",
+      title: "04 HANDCAR",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -48,13 +65,13 @@ export default function ProjectSection() {
         "/skills/css.png",
       ],
       description:
-        "A platform where car owners and service providers meet where you can search for various services for your vehicle",
+        "A platform where car owners and service providers meet where you can search for various services for your vehicle. Also Comes with an Admin Dashboard and Vendor Dashboard",
     },
     {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586389/Screenshot_2025-02-26_213236_nu84k6.png",
       link: "https://pizzakebabclub.com/",
-      title: "04 PIZZA CLUB",
+      title: "05 PIZZA CLUB",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -69,7 +86,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586389/Screenshot_2025-02-26_213300_thgbx4.png",
       link: "https://englishmirrorofficial.com/",
-      title: "05 ENGLISH MIRROR",
+      title: "06 ENGLISH MIRROR",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -83,7 +100,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1741456867/Screenshot_2025-03-08_232430_grlpzd.png",
       link: "https://jobportalversion2.onrender.com",
-      title: "06 COMMUNITY APP",
+      title: "07 COMMUNITY APP",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -100,7 +117,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586498/Screenshot_2025-02-26_214413_gz0xmb.png",
       link: "https://bemax-ts-portal.onrender.com/",
-      title: "07 BEMAX PORTAL",
+      title: "08 BEMAX PORTAL",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
@@ -118,7 +135,7 @@ export default function ProjectSection() {
       image:
         "https://res.cloudinary.com/dnimjeptu/image/upload/v1740586499/Screenshot_2025-02-26_214353_nm2ftw.png",
       link: "https://proshop-408l.onrender.com",
-      title: "08 PROSHOP",
+      title: "09 PROSHOP",
       tools: [
         "/skills/react.png",
         "/skills/tailwind.png",
